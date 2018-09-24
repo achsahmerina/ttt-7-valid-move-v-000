@@ -7,7 +7,7 @@ def valid_move?(board, index)
     end
   end
 
-  def on_board?(number)
+  def board(number)
     if number.between?(0, 9) == true
       return true
     else
@@ -15,7 +15,7 @@ def valid_move?(board, index)
     end
   end
 
-  if (position_taken?(board, index)) == false && (on_board?(index) == true)
+  if (position_taken?(board, index)) == false && (board(index) == true)
     return true
   else
     return false
