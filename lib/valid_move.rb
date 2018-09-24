@@ -6,7 +6,7 @@ end
 
 end
 def position_taken?(board, index)
-  if array[num] ==  " " || array[num] == "" || array[num] == nil
+  if array[num] ==  " " || board[index] == "" || array[num] == nil
     return true
   else
     return false
