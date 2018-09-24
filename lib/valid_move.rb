@@ -1,8 +1,11 @@
-def valid_move?(board, index)
+def valid_move?(number, board)
+  number.between?(0, 8) && !
+  (position_taken?(board, number))
+end
 
 
 end
-def position_taken?(array, num)
+def position_taken?(board, index)
   if array[num] ==  " " || array[num] == "" || array[num] == nil
     return true
   else
