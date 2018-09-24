@@ -3,8 +3,6 @@ def valid_move?(number, board)
   (position_taken?(board, number))
 end
 
-
-end
 def position_taken?(board, index)
   if board[index] ==  " " || board[index] == "" || board[index] == nil
     return true
