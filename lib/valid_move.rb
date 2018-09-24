@@ -7,12 +7,5 @@ def valid_move?(board, index)
     end
   end
 
-  def board(number)
-    if number.between?(0, 8) == true
-      return true
-    else
-      return false
-    end
-  end
 
 end
